@@ -1,0 +1,34 @@
+.was-validated {
+  .form-control {
+    &:invalid {
+      @include bootstrapValidReset($color-primary-300, '../images/error_cross.svg');
+    }
+    &:valid{
+      @include bootstrapValidReset($color-secondary-700, '../images/success_check.svg');
+    }
+  }
+}
+
+.form-control{
+  border-radius: 15px;
+  border: 1px solid $color-secondary-300;
+  padding: 12px 1rem;
+  color: $color-secondary-200;
+  &::placeholder{
+    color: $color-secondary-200;
+  }
+  &:focus{
+    outline: none;
+    border-color: $color-secondary-200;
+    color: $color-primary-100;
+    box-shadow: unset;
+    &::placeholder{
+      color: transparent;
+    }
+  }
+}
+
+.valid-feedback, .invalid-feedback{
+  font-size: 10px;
+  padding: 0 17px;
+}

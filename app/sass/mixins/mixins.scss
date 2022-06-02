@@ -1,0 +1,15 @@
+@mixin bootstrapValidReset ($backgroundColor, $image){
+  border-color: $backgroundColor;
+  background-image: url($image);
+  background-size: auto;
+  &:focus{
+    border-color: $backgroundColor;
+    box-shadow: none;
+  }
+}
+
+@mixin buttonColors ($backgroundColor, $borderColor, $textColor) {
+  background: $backgroundColor;
+  border: 1px solid $borderColor;
+  color: $textColor;
+}
