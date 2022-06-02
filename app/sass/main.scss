@@ -2,11 +2,16 @@
 @import "mixins/mixins.scss";
 @import "parts/buttons.scss";
 @import "parts/inputs.scss";
+@import "parts/checkboxes.scss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap');
 
 * {
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+  background: $color-primary-200;
 }
 
 h1 {
