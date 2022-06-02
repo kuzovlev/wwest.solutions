@@ -1,0 +1,39 @@
+@mixin buttonColors ($backgroundColor, $borderColor, $textColor) {
+  background: $backgroundColor;
+  border: 1px solid $borderColor;
+  color: $textColor;
+}
+
+.btn{
+  border-radius: 15px;
+  transition: all .5s;
+  padding: 12px;
+  &__text{ // SEND US A TEXT BUTTON
+    @include buttonColors($color-primary-100, "transparent", $color-primary-200);
+    &:hover{
+      @include buttonColors($color-primary-200, $color-primary-100, $color-primary-100);
+    }
+  }
+  &__cars{ // SELECT CARS BUTTON
+    @include buttonColors($color-primary-300, "transparent", $color-primary-200);
+    &:hover{
+      @include buttonColors($color-primary-200, $color-primary-300, $color-primary-300);
+    }
+  }
+  &__browse{ //BROWSE CARS BUTTON
+    @include buttonColors("transparent", $color-primary-200, $color-primary-200);
+    font-size: 20px;
+    &:hover{
+      @include buttonColors($color-primary-200, $color-primary-200, $color-primary-100);
+    }
+  }
+  &__subscribe{ //SUBSCRIBE BUTTON
+    @include buttonColors($color-primary-200, $color-primary-200, $color-primary-100);
+    &:hover{
+      @include buttonColors("transparent", $color-primary-200, $color-primary-200);
+    }
+  }
+  &:disabled{
+    filter: opacity(.4);
+  }
+}

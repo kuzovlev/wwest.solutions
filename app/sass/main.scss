@@ -1,2 +1,17 @@
 @import "parts/variables.scss";
+@import "parts/buttons.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap');
 
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+  background: red;
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+}
