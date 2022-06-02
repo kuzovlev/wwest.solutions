@@ -18,4 +18,9 @@
    }, false);
    // Bootstrap validation script end //
 
+   document.querySelector('.navbar-toggler').addEventListener('click', (e)=>{
+      const menuSelector = e.target.parentNode.getAttribute('data-target');
+      document.querySelector(menuSelector).classList.toggle('show');
+   });
+
 })();

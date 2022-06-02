@@ -1,0 +1,39 @@
+.main-photo {
+  background: url(../images/main_photo.webp) no-repeat;
+  background-position-x: right;
+
+  .navbar-toggler {
+    color: $color-primary-200;
+    border: none;
+
+    span {
+      background-image: url(../images/burger.svg);
+    }
+
+    &:focus {
+      box-shadow: unset;
+    }
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+
+    .nav-item {
+      a {
+        color: $color-primary-200;
+      }
+
+      &.nav-item__social {
+        .nav-item__social-item {
+          display: inline-block;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-pills {
+        justify-content: center;
+      }
+    }
+  }
+}
