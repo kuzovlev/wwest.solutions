@@ -23,4 +23,15 @@
       document.querySelector(menuSelector).classList.toggle('show');
    });
 
+   const dropdownButtons = Array.from(document.getElementsByClassName('btn__dropdown'));
+   dropdownButtons.forEach((item)=>{
+      item.addEventListener('click', (e)=>{
+         const targetItem = e.target.getAttribute('id');
+         const dropdownMenu = item.nextElementSibling;
+         dropdownMenu.style.width = item.offsetWidth+'px';
+         dropdownMenu.classList.toggle('show');
+         document.getElementById(targetItem).classList.toggle('show');
+      });
+   })
+
 })();
