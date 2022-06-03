@@ -1,6 +1,7 @@
 const { src, dest, parallel, series, watch } = require('gulp');
 
 const sass = require('gulp-sass')(require('sass'));
+const bulk = require('gulp-sass-bulk-import');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
 const concat = require('gulp-concat');
@@ -19,6 +20,7 @@ function browsersync() {
 function styles() {
     return src('app/sass/main.scss')
         .pipe(map.init())
+        .pipe(bulk())
         .pipe(sass())
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
         .pipe(cleancss( { level: { 1: { specialComments: 0 } }} ))

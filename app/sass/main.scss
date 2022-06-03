@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap');
-@import "parts/variables.scss";
-@import "mixins/mixins.scss";
-@import "parts/buttons.scss";
-@import "parts/inputs.scss";
-@import "parts/checkboxes.scss";
-@import "blocks/main_photo";
-@import "blocks/offers-filter";
+@import "parts/variables";
+@import "mixins/mixins";
+@import "parts/*.scss";
+@import "blocks/*.scss";
+
 * {
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
