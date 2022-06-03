@@ -26,11 +26,12 @@
    const dropdownButtons = Array.from(document.getElementsByClassName('btn__dropdown'));
    dropdownButtons.forEach((item)=>{
       item.addEventListener('click', (e)=>{
+         let shownItems = dropdownButtons.filter((item) => item.classList.contains('show'));
          const targetItem = e.target.getAttribute('id');
          const dropdownMenu = item.nextElementSibling;
          dropdownMenu.style.width = item.offsetWidth+'px';
-         dropdownMenu.classList.toggle('show');
          document.getElementById(targetItem).classList.toggle('show');
+         shownItems.length > 0 ? shownItems[0].classList.remove('show') : null;
       });
    })
 
