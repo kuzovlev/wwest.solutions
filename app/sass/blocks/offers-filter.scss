@@ -1,0 +1,116 @@
+#offers {
+  padding-top: 100px;
+  height: 500px;
+
+  .filter-block {
+    padding-top: 80px;
+    // TOP filter (dropdowns) start //
+    .dropdown {
+      font-size: 15px;
+      padding-left: 0;
+      padding-right: 20px;
+      .btn__dropdown {
+        ~ .dropdown-menu {
+          display: none;
+        }
+
+        &.show {
+          ~ .dropdown-menu {
+            position: absolute;
+            top: calc(100% - 1px);
+            display: block;
+            padding-top: 0;
+            border-radius: 0 0 15px 15px;
+            border-color: #000000;
+            border-top: transparent;
+            .dropdown-item {
+              overflow: hidden;
+              font-size: 13px;
+              width: 95%;
+              &:hover {
+                background: none;
+                color: $color-primary-300;
+              }
+            }
+          }
+        }
+      }
+    }
+    // TOP filter (dropdowns) end //
+
+    // Bottom filter start //
+    .cars-available{
+      font-size: 12px;
+    }
+
+    .sort{
+      font-size: 12px;
+      position: relative;
+      button{
+        border: none;
+        background: transparent;
+        color:$color-secondary-200;
+        position: relative;
+        margin-left: 10px;
+        min: 13vw;
+        &[data-sort='ascending'], &[data-sort='descending']{
+          &:before {
+            position: absolute;
+            content: "";
+            display: block;
+            background: url(../images/sort.svg) no-repeat center;
+            width: 10px;
+            height: 13px;
+            left: -10px;
+            transform: translateY(-50%);
+          }
+        }
+        &[data-sort='ascending']{
+          &:before{
+            top: 50%;
+          }
+        }
+        &[data-sort='descending']{
+          &:before{
+            transform: rotate(180deg) translateY(-50%);
+            bottom: 50%;
+          }
+        }
+      }
+      .sort-options{
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        border-radius: 15px;
+        .chosen{
+          display: none;
+        }
+      }
+    }
+  }
+  // Bottom filter end //
+  @media screen and (max-width: 576px){
+    .filter-block{
+      .dropdown{
+        padding-left: 20px;
+      }
+      .btn__cars{
+        width: 90%;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    h2{
+      font-size: 2.5em;
+    }
+  }
+  @media screen and (min-width: 992px){
+    .filter-block{
+      .dropdown{
+        &.col-lg-2{
+          width: 185px;
+        }
+      }
+    }
+  }
+}

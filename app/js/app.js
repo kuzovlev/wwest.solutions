@@ -35,4 +35,25 @@
       });
    });
 
+   const sortingButton = document.getElementById("sorting-button");
+   sortingButton.addEventListener('click', ()=>{
+      document.querySelector('.sort-options').classList.toggle('show');
+   });
+
+   const sortingOptions = Array.from(document.querySelectorAll('.sort-options li'));
+   let chosenOption = sortingOptions.filter(item=>item.classList.contains('chosen'));
+   sortingOptions.forEach(item=>{
+      item.addEventListener('click', (e)=>{
+         e.preventDefault();
+         const optionText = e.target.innerText;
+         const optionSort = e.target.getAttribute('data-sort');
+         sortingButton.setAttribute('data-sort', optionSort);
+         sortingButton.innerText = optionText;
+         chosenOption[0].classList.toggle('chosen');
+         chosenOption[0] = e.currentTarget;
+         e.currentTarget.classList.toggle('chosen');
+         document.querySelector('.sort-options').classList.toggle('show');
+      });
+   });
+
 })();
