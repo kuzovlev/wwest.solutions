@@ -18,6 +18,7 @@ function browsersync() {
 
 function styles() {
     return src('app/sass/main.scss')
+        .pipe(map.init())
         .pipe(sass())
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
         .pipe(cleancss( { level: { 1: { specialComments: 0 } }} ))
