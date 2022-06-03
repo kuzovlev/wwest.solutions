@@ -1,6 +1,6 @@
 .btn{
   border-radius: 15px;
-  transition: all .5s;
+  transition: background-color .5s, color .5s;
   padding: 12px;
   &__text{ // SEND US A TEXT BUTTON
     @include buttonColors($color-primary-100, "transparent", $color-primary-200);
@@ -25,6 +25,13 @@
     @include buttonColors($color-primary-200, $color-primary-200, $color-primary-100);
     &:hover{
       @include buttonColors("transparent", $color-primary-200, $color-primary-200);
+    }
+  }
+  &__dropdown{
+    @include buttonColors("transparent", $color-secondary-300, "#000");
+    width: 170px;
+    &.show{
+      font-weight: bold;
     }
   }
   &:disabled{
