@@ -1,38 +1,69 @@
 .main-photo {
   background: url(../images/main_photo.webp) no-repeat;
+  background-color: #111312;
   background-position-x: right;
+  color: $color-primary-200;
+  padding-bottom: 10vw;
+  max-height: 686px;
+  .navbar {
+    --bs-navbar-brand-padding-y: 12px;
+    .navbar-toggler {
+      color: $color-primary-200;
+      border: none;
 
-  .navbar-toggler {
-    color: $color-primary-200;
-    border: none;
-
-    span {
-      background-image: url(../images/burger.svg);
-    }
-
-    &:focus {
-      box-shadow: unset;
-    }
-  }
-
-  .navbar-collapse {
-    flex-grow: 0;
-
-    .nav-item {
-      a {
-        color: $color-primary-200;
+      span {
+        background-image: url(../images/burger.svg);
       }
 
-      &.nav-item__social {
-        .nav-item__social-item {
-          display: inline-block;
+      &:focus {
+        box-shadow: unset;
+      }
+    }
+
+    .navbar-collapse {
+      flex-grow: 0;
+
+      .nav-item {
+        a {
+          color: $color-primary-200;
+        }
+
+        &.nav-item__social {
+          .nav-item__social-item {
+            display: inline-block;
+          }
         }
       }
     }
+  }
 
-    @media screen and (max-width: 768px) {
-      .nav-pills {
-        justify-content: center;
+  .main-photo__info{
+    margin-top: 100px;
+    h1{
+      color: $color-primary-200;
+    }
+    .main-photo__text{
+      margin-top: 2em;
+      margin-bottom: 4em;
+    }
+  }
+
+  @media screen and (max-width:992px){
+    background-position-x: unset;
+    .main-photo__info{
+      h1{
+        font-size: 2.5em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      height: 50px;
+      .navbar-collapse {
+        .nav-pills {
+          justify-content: center;
+        }
       }
     }
   }
