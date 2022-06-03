@@ -1,0 +1,21 @@
+#offers{
+  height: 500px;
+  .filter-block{
+    .dropdown{
+      font-size: 15px;
+      width: max-content;
+      padding-left: 0;
+      padding-right: 20px;
+      .dropdown-menu{
+        position: absolute;
+        top: calc(100% - 1px);
+        &.show{
+          padding-top: 0;
+          border-radius: 0 0 15px 15px;
+          border-color: #000000;
+          border-top: transparent;
+        }
+      }
+    }
+  }
+}
