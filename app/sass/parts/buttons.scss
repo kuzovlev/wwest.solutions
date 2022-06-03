@@ -28,8 +28,8 @@
     }
   }
   &__dropdown{
-    @include buttonColors("transparent", $color-secondary-300, "#000");
-    width: 170px;
+    @include buttonColors("transparent", $color-secondary-300, "#000000");
+    width: 100%;
     position: relative;
     &:after{
       margin: 0;
