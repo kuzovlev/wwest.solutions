@@ -47,11 +47,13 @@
             <h1>The right way to get a car</h1>
             <div class="main-photo__text row col-xs-12 col-lg-8 col-xl-7">
                 <p class="col-xs-12 col-md-6 col-xl-5">
-                    Monza Motorsports is a boutique-style dealership specializing in premium imports. We offer an advanced
+                    Monza Motorsports is a boutique-style dealership specializing in premium imports. We offer an
+                    advanced
                     online vehicle purchasing experience with integrated financing and contactless home delivery.
                 </p>
                 <p class="col-xs-12 col-md-6 col-xl-5">
-                    All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza Motorsports
+                    All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza
+                    Motorsports
                     has been the benchmark for innovation in the automotive industry.
                 </p>
             </div>
@@ -62,32 +64,206 @@
     </div>
 </section>
 
+<section id="offers" class="container">
+    <h2 class="text-center">
+        CURRENT OFFERS
+    </h2>
+    <div class="filter-block">
+        <div class="row justify-content-center">
+            <div class="dropdown year mt-3 col-11 col-sm-4 col-lg-2">
+                <button class="btn btn__dropdown text-start" type="button" id="dropdownYear">
+                    Year
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownYear">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown make mt-3 col-11 col-sm-4 col-lg-2">
+                <button class="btn btn__dropdown text-start" type="button" id="dropdownMake">
+                    Make
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMake">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown model mt-3 col-11 col-sm-4 col-lg-2">
+                <button class="btn btn__dropdown text-start" type="button" id="dropdownModel">
+                    Model
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownModel">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown trim mt-3 col-11 col-sm-4 col-lg-2">
+                <button class="btn btn__dropdown text-start" type="button" id="dropdownTrim">
+                    Trim
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownTrim">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown mile mt-3 col-11 col-sm-4 col-lg-2">
+                <button class="btn btn__dropdown text-start" type="button" id="dropdownMile">
+                    Mileage
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMile">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <button class="btn btn__cars mt-3 col-md-5 col-xl-2 col-xxl-3">40 cars</button>
+        </div>
+        <div class="row justify-content-center justify-content-md-between mt-3">
+            <div class="checkbox cars-available col-auto mb-2">
+                <input type="checkbox" class="styled-checkbox" value="None" id="availableCheck" name="availability"/>
+                <label for="availableCheck">Instantly available vehicles</label>
+            </div>
 
+            <div class="sort col-auto">
+                <span class="m-2">Sort by</span>
+                <button data-sort="ascending" data-option="Publication date" id="sorting-button" class="text-start">
+                    Publication date (ascending)
+                </button>
+                <ul class="dropdown-menu sort-options" aria-labelledby="sorting-button">
+                    <li class="chosen"><a class="dropdown-item" href="#" data-sort="ascending">
+                        Publication date (ascending)
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="descending">
+                        Publication date (descending)
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="ascending">
+                        Price (ascending)
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="descending">
+                        Mileage (descending)
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="ascending">
+                        Mileage (ascending)
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="descending">
+                        Price (descending)
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="ascending">
+                        Performance (ascending)
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-sort="ascending">
+                        Performance (ascending)
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section__subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="section__subscribe-left col-12 col-md-5">
+                <h4>Haven't found a suitable vehicle?</h4>
+                <p>
+                    Sign up for our newsletter and be the first to know when we publish new vehicle offers.
+                </p>
+            </div>
+            <div class="section__subscribe-right col my-auto">
+                <form class="needs-validation row" novalidate>
+                    <div class="col-12 col-sm">
+                        <input type="email" class="input form-control" id="validationCustom01"
+                               placeholder="Enter your email"
+                               required>
+                        <div class="invalid-feedback">
+                            Incorrect email
+                        </div>
+                    </div>
+                    <button class="btn btn__subscribe col-10 col-sm-4 mt-3 mt-sm-0" type="submit">Subscribe now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="questions">
+    <h2 class="text-center">popular questions</h2>
+
+    <div class="container accordion-container">
+        <div class="accordion accordion-flush" id="accordionQuestion">
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    1. Scope
+                </button>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam corporis dignissimos
+                        dolore ducimus est fugiat laborum magnam magni minima minus natus, nihil officia quibusdam quis
+                        quo rem, reprehenderit voluptate!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2. Vehicle characteristics
+                </button>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum distinctio earum magnam,
+                        magni praesentium quia ratione repellat repellendus tempore. Adipisci ea esse hic labore
+                        laboriosam quasi ratione, saepe vel?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3. Warranty / guarantee
+                </button>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                     data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        <p>
+                            3.1 The statutory warranty is completely excluded to the extent permitted by law.
+                        </p>
+                        <p>
+                            3.2 If the vehicle still has a current factory warranty, a sales representative (brand
+                            representative) of the manufacturer shall provide the services owed therein. If there is a
+                            factory warranty, the beginning of the warranty for new vehicles or vehicles with a current
+                            manufacturer's warranty is not the date of the first placing on the market, but the
+                            beginning of the warranty in the manufacturer's system or the contractually agreed beginning
+                            of the warranty, if any.
+                        </p>
+                        <p>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of
+                            the material warranty according to section 3.1 and replace it. In this case, the General
+                            Terms and Conditions of the respective warranty service provider apply.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- TO BE CHANGED
 
 <button class="btn btn__text">Text a message</button>
 
-<button class="btn btn__cars">40 cars</button>
 
 
-<div class="checkbox">
-    <input type="checkbox" class="styled-checkbox" value="None" id="checkboxId" name="check" checked/>
-    <label for="checkboxId">sadasdasd</label>
-</div>
 
 <div class="container">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid earum et exercitationem in magni neque nihil
         nisi, odit quas quidem tenetur vitae voluptatem? Alias ipsum molestiae necessitatibus, numquam quos veniam.</p>
-    <form class="needs-validation" novalidate>
-        <div class="col-md-4 mb-3">
-            <input type="email" class="input form-control" id="validationCustom01" placeholder="First name"
-                   required>
-            <div class="invalid-feedback">
-                Incorrect email
-            </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
+
 </div>
 
 
@@ -102,8 +278,12 @@
 </section>
 -->
 
-<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 <script src="js/app.min.js"></script>
 </body>
 </html>
