@@ -1,0 +1,17 @@
+footer{
+  background: $color-primary-100;
+  padding: 30px 0;
+  .nav-item {
+    a {
+      color: $color-primary-200;
+      &:hover {
+        color: $color-primary-300
+      }
+    }
+    &.nav-item__social {
+      .nav-item__social-item {
+        display: inline-block;
+      }
+    }
+  }
+}
