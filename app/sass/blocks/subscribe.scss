@@ -1,0 +1,23 @@
+.section__subscribe{
+  background: $color-primary-100;
+  color: $color-primary-200;
+  padding: 40px 0 45px;
+  .section__subscribe-left{
+    h4{
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 15px;
+      padding-left: 0;
+      padding-right: 40px;
+    }
+  }
+  .section__subscribe-right{
+    form{
+      button{
+        height: 50px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
