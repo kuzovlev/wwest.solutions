@@ -60,13 +60,16 @@
    accordionBlock.addEventListener('click', function(e) {
       const items = document.querySelectorAll('.accordion-item');
       const target = e.target.closest('.accordion-item');
-      if(!target.classList.contains('shown-item')){
-         Array.from(items).forEach(item => {
-            item.classList.remove('shown-item')
-         });
-         target.classList.add('shown-item');
-      } else {
-         target.classList.remove('shown-item');
+      if (e.target.tagName === "BUTTON") {
+         if (!target.classList.contains('shown-item')) {
+            Array.from(items).forEach(item => {
+               item.classList.remove('shown-item')
+            });
+            target.classList.add('shown-item');
+
+         } else {
+            target.classList.remove('shown-item');
+         }
       }
    })
 

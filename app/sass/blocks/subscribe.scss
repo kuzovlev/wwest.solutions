@@ -14,6 +14,12 @@
   }
   .section__subscribe-right{
     form{
+      .form-control:focus {
+        color: $color-primary-200;
+      }
+      .invalid-feedback, valid-feedback{
+        position: absolute;
+      }
       button{
         height: 50px;
         margin: 0 auto;

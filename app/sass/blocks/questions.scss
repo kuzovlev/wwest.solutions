@@ -13,13 +13,14 @@
 
         &.shown-item {
           background: white;
-          padding: 24px 40px;
+          padding: 0 40px 24px;
         }
 
         button {
           background: transparent;
           font-size: 15px;
           font-weight: 500;
+          transition: all .5s;
 
           &:focus {
             border-color: transparent;
@@ -37,6 +38,7 @@
             color: $color-primary-300;
             font-weight: 700;
             box-shadow: none;
+            padding-top: 40px;
 
             &:after {
               content: "—";
