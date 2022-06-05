@@ -1,0 +1,88 @@
+.card-item{
+  text-decoration: none;
+  color: $color-primary-100;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 18px rgba(68, 68, 68, 0.09);
+  transition: opacity .3s;
+  &:hover{
+    opacity: 0.9;
+    color: $color-primary-100;
+  }
+  &[data-new="true"], &[data-sold="true"]{
+    .image-container{
+      position: relative;
+      &:before{
+        content: "New";
+        display: block;
+        position: absolute;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        color: $color-secondary-500;
+      }
+    }
+  }
+  &[data-new="true"]{
+    .image-container::before{
+        content: "New";
+        background: $color-primary-100;
+        width: 64px;
+        height: 24px;
+        bottom: 0;
+        border-radius: 0 12px 12px 0;
+        font-size: 12px;
+        line-height: 24px;
+    }
+  }
+  &[data-sold="true"]{
+    filter: saturate(0);
+    .image-container::before{
+      content: "SOLD";
+      font-size: 50px;
+      font-weight: 700;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .card-body{
+      opacity: .5;
+    }
+  }
+  .image-container {
+    .card-img-top {
+      border-radius: 0;
+    }
+  }
+  .card-body {
+    h6 {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      span {
+        color: $color-secondary-200;
+        margin-right: 8px;
+      }
+    }
+    .info{
+      span {
+        font-weight: 300;
+        font-size: 14px;
+        padding-right: 8px;
+        &:not(:first-child){
+          padding-left: 8px;
+        }
+        &:not(:last-child){
+          border-right: 1px solid $color-secondary-200;
+        }
+      }
+    }
+    .price{
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
