@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>wwest.solutons</title>
+    <title>wwwest.solutons</title>
 </head>
 <body>
 <section class="main-photo">
@@ -92,20 +92,16 @@
                 <button class="btn btn__dropdown text-start" type="button" id="dropdownTrim">
                     Trim
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownTrim">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <ul class="dropdown-menu" aria-labelledby="dropdownTrim"></ul>
             </div>
             <div class="dropdown mile mt-3 col-11 col-sm-4 col-lg-2">
                 <button class="btn btn__dropdown text-start" type="button" id="dropdownMile">
                     Mileage
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMile">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">< 20,000 km</a></li>
+                    <li><a class="dropdown-item" href="#">< 50,000 km</a></li>
+                    <li><a class="dropdown-item" href="#">< 100,000 km</a></li>
                 </ul>
             </div>
             <button class="btn btn__cars mt-3 col-md-5 col-xl-2 col-xxl-3">40 cars</button>
@@ -159,7 +155,9 @@
                 <div class="card-body">
                     <h6>
                         <span class="year">2019</span>
-                        olkswagen <span class="model"> Tiguan</span></h6>
+                        <span class="make">Volkswagen</span>
+                        <span class="model"> Tiguan</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>19,855 km</span>
                         <span>Automatic</span>
@@ -170,13 +168,17 @@
             </a>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <a href="#" class="card card-item">
+            <a href="#" class="card card-item" data-new="true">
                 <div class="image-container">
                     <img class="card-img-top" src="./images/cars/car-2.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2014</span>
-                        Toyota <span class="model"> Highlander</span> XLE</h6>
+                    <h6>
+                        <span class="year">2014</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Highlander</span>
+                        <span class="trim"> XLE</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>69,000 km</span>
                         <span>Automatic</span>
@@ -192,8 +194,12 @@
                     <img class="card-img-top" src="./images/cars/car-3.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2017</span>
-                        Lexus <span class="model"> RX</span> 350 LUXURY</h6>
+                    <h6>
+                        <span class="year">2017</span>
+                        <span class="make">Lexus</span>
+                        <span class="model"> RX</span>
+                        <span class="trim">350 LUXURY</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>39,850 km</span>
                         <span>Automatic</span>
@@ -209,8 +215,12 @@
                     <img class="card-img-top" src="./images/cars/car-4.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2016</span>
-                        Toyota <span class="model"> Highlander</span> LE A...</h6>
+                    <h6>
+                        <span class="year">2016</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Highlander</span>
+                        <span class="trim">  LE AWD</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>104,000 km</span>
                         <span>Automatic</span>
@@ -226,8 +236,11 @@
                     <img class="card-img-top" src="./images/cars/car-5.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2017</span>
-                        Hyundai <span class="model"> Elantra</span></h6>
+                    <h6>
+                        <span class="year">2017</span>
+                        <span class="make">Hyundai</span>
+                        <span class="model"> Elantra</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>95,000 km</span>
                         <span>Automatic</span>
@@ -243,8 +256,12 @@
                     <img class="card-img-top" src="./images/cars/car-6.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2016</span>
-                        Mercedes- Benz <span class="model">GLE-Class</span> Coupe</h6>
+                    <h6>
+                        <span class="year">2016</span>
+                        <span class="make">Mercedes-Benz</span>
+                        <span class="model"> GLE-Class</span>
+                        <span class="trim"> Coupe</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>59,800 km</span>
                         <span>Automatic</span>
@@ -260,8 +277,12 @@
                     <img class="card-img-top" src="./images/cars/car-7.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2015</span>
-                        Toyota <span class="model"> Venza</span> AWD XLE 2.5 Hybrid</h6>
+                    <h6>
+                        <span class="year">2015</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Venza</span>
+                        <span class="trim"> AWD XLE 2.5 Hybrid</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>99,000 km</span>
                         <span>Automatic</span>
@@ -277,8 +298,12 @@
                     <img class="card-img-top" src="./images/cars/car-8.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2016</span>
-                        Lexus <span class="model"> RX</span> 350 F-SPORT</h6>
+                    <h6>
+                        <span class="year">2016</span>
+                        <span class="make">Lexus</span>
+                        <span class="model"> RX 350</span>
+                        <span class="trim">F-SPORT</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>86,000 km</span>
                         <span>Automatic</span>
@@ -294,8 +319,11 @@
                     <img class="card-img-top" src="./images/cars/car-1.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2019</span>
-                        Volkswagen <span class="model"> Tiguan</span></h6>
+                    <h6>
+                        <span class="year">2019</span>
+                        <span class="make">Volkswagen</span>
+                        <span class="model"> Tiguan</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>19,855 km</span>
                         <span>Automatic</span>
@@ -311,8 +339,12 @@
                     <img class="card-img-top" src="./images/cars/car-2.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2014</span>
-                        Toyota <span class="model"> Highlander</span> XLE</h6>
+                    <h6>
+                        <span class="year">2014</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Highlander</span>
+                        <span class="trim"> XLE</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>69,000 km</span>
                         <span>Automatic</span>
@@ -328,8 +360,12 @@
                     <img class="card-img-top" src="./images/cars/car-3.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2017</span>
-                        Lexus <span class="model"> RX</span> 350 LUXURY</h6>
+                    <h6>
+                        <span class="year">2017</span>
+                        <span class="make">Lexus</span>
+                        <span class="model"> RX</span>
+                        <span class="trim">350 LUXURY</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>39,850 km</span>
                         <span>Automatic</span>
@@ -345,8 +381,12 @@
                     <img class="card-img-top" src="./images/cars/car-4.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2016</span>
-                        Toyota <span class="model"> Highlander</span> LE A...</h6>
+                    <h6>
+                        <span class="year">2016</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Highlander</span>
+                        <span class="trim">  LE AWD</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>104,000 km</span>
                         <span>Automatic</span>
@@ -362,8 +402,11 @@
                     <img class="card-img-top" src="./images/cars/car-1.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2019</span>
-                        Volkswagen <span class="model"> Tiguan</span></h6>
+                    <h6>
+                        <span class="year">2019</span>
+                        <span class="make">Volkswagen</span>
+                        <span class="model"> Tiguan</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>19,855 km</span>
                         <span>Automatic</span>
@@ -379,8 +422,12 @@
                     <img class="card-img-top" src="./images/cars/car-2.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2014</span>
-                        Toyota <span class="model"> Highlander</span> XLE</h6>
+                    <h6>
+                        <span class="year">2014</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Highlander</span>
+                        <span class="trim"> XLE</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>69,000 km</span>
                         <span>Automatic</span>
@@ -396,8 +443,12 @@
                     <img class="card-img-top" src="./images/cars/car-3.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2017</span>
-                        Lexus <span class="model"> RX</span> 350 LUXURY</h6>
+                    <h6>
+                        <span class="year">2017</span>
+                        <span class="make">Lexus</span>
+                        <span class="model"> RX</span>
+                        <span class="trim">350 LUXURY</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>39,850 km</span>
                         <span>Automatic</span>
@@ -413,8 +464,12 @@
                     <img class="card-img-top" src="./images/cars/car-4.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2016</span>
-                        Toyota <span class="model"> Highlander</span> LE A...</h6>
+                    <h6>
+                        <span class="year">2016</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Highlander</span>
+                        <span class="trim">  LE AWD</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>104,000 km</span>
                         <span>Automatic</span>
@@ -430,8 +485,11 @@
                     <img class="card-img-top" src="./images/cars/car-5.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2017</span>
-                        Hyundai <span class="model"> Elantra</span></h6>
+                    <h6>
+                        <span class="year">2017</span>
+                        <span class="make">Hyundai</span>
+                        <span class="model"> Elantra</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>95,000 km</span>
                         <span>Automatic</span>
@@ -447,8 +505,12 @@
                     <img class="card-img-top" src="./images/cars/car-6.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2016</span>
-                        Mercedes-Benz <span class="model">GLE-Class</span> Coupe</h6>
+                    <h6>
+                        <span class="year">2016</span>
+                        <span class="make">Mercedes-Benz</span>
+                        <span class="model"> GLE-Class</span>
+                        <span class="trim"> Coupe</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>59,800 km</span>
                         <span>Automatic</span>
@@ -464,8 +526,12 @@
                     <img class="card-img-top" src="./images/cars/car-7.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2015</span>
-                        Toyota <span class="model"> Venza</span> AWD XLE 2.5 Hybrid</h6>
+                    <h6>
+                        <span class="year">2015</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Venza</span>
+                        <span class="trim"> AWD XLE 2.5 Hybrid</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>99,000 km</span>
                         <span>Automatic</span>
@@ -481,8 +547,12 @@
                     <img class="card-img-top" src="./images/cars/car-8.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2016</span>
-                        Lexus <span class="model"> RX</span> 350 F-SPORT</h6>
+                    <h6>
+                        <span class="year">2016</span>
+                        <span class="make">Lexus</span>
+                        <span class="model"> RX 350</span>
+                        <span class="trim">F-SPORT</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>86,000 km</span>
                         <span>Automatic</span>
@@ -498,8 +568,11 @@
                     <img class="card-img-top" src="./images/cars/car-1.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2019</span>
-                        Volkswagen <span class="model"> Tiguan</span></h6>
+                    <h6>
+                        <span class="year">2019</span>
+                        <span class="make">Volkswagen</span>
+                        <span class="model"> Tiguan</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>19,855 km</span>
                         <span>Automatic</span>
@@ -515,8 +588,12 @@
                     <img class="card-img-top" src="./images/cars/car-2.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h6><span class="year">2014</span>
-                        Toyota <span class="model"> Highlander</span> XLE</h6>
+                    <h6>
+                        <span class="year">2014</span>
+                        <span class="make">Toyota</span>
+                        <span class="model"> Highlander</span>
+                        <span class="trim"> XLE</span>
+                    </h6>
                     <div class="info mb-4">
                         <span>69,000 km</span>
                         <span>Automatic</span>
@@ -612,6 +689,76 @@
                             the material warranty according to section 3.1 and replace it. In this case, the General
                             Terms and Conditions of the respective warranty service provider apply.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                    4. Trade-in vehicle
+                </button>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum distinctio earum magnam,
+                        magni praesentium quia ratione repellat repellendus tempore. Adipisci ea esse hic labore
+                        laboriosam quasi ratione, saepe vel?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                    5. Home Delivery
+                </button>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum distinctio earum magnam,
+                        magni praesentium quia ratione repellat repellendus tempore. Adipisci ea esse hic labore
+                        laboriosam quasi ratione, saepe vel?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                    6. Right of return
+                </button>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum distinctio earum magnam,
+                        magni praesentium quia ratione repellat repellendus tempore. Adipisci ea esse hic labore
+                        laboriosam quasi ratione, saepe vel?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                    7. Written form
+                </button>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum distinctio earum magnam,
+                        magni praesentium quia ratione repellat repellendus tempore. Adipisci ea esse hic labore
+                        laboriosam quasi ratione, saepe vel?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                    8. Applicable law and place of jurisdiction
+                </button>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionQuestion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum distinctio earum magnam,
+                        magni praesentium quia ratione repellat repellendus tempore. Adipisci ea esse hic labore
+                        laboriosam quasi ratione, saepe vel?
                     </div>
                 </div>
             </div>

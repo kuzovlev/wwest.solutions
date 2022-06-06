@@ -55,7 +55,7 @@
          document.querySelector('.sort-options').classList.toggle('show');
       });
    });
-
+   // ACCORDION
    const accordionBlock = document.getElementById('accordionQuestion');
    accordionBlock.addEventListener('click', function(e) {
       const items = document.querySelectorAll('.accordion-item');
@@ -72,18 +72,17 @@
          }
       }
    });
-
-   const manufacturer = new Set(Array.from(document.querySelectorAll('.card-body h6')).map(item=>{
-      return item.textContent.slice(4).match(/(\w+)/)[0];
-   }));
-
+   // MAKING AUTO GENERATION OF DROPDOWN FILTER LISTS
    function getElementsToFilter (element = "") {
       return new Set(Array.from(document.querySelectorAll('.card-body h6 .' + element)).map(item => {
          return item.innerText;
       }));
    }
+
+   const manufacturer = getElementsToFilter('make');
    const years = getElementsToFilter('year');
    const models = getElementsToFilter('model');
+   const trims = getElementsToFilter('trim');
 
    const fillDropdowns = (element, content) => {
       const dropdown = document.querySelector('.dropdown.'+element).querySelector('.dropdown-menu');
@@ -95,4 +94,15 @@
    fillDropdowns('make', manufacturer);
    fillDropdowns('year', years);
    fillDropdowns('model', models);
+   fillDropdowns('trim', trims);
+
+   const filterItems = document.querySelectorAll('.filter-block .dropdown-item');
+   filterItems.forEach(item=>{
+      item.addEventListener('click',(e)=>{
+         e.preventDefault();
+         const filterButton = e.target.closest('.dropdown-menu').previousElementSibling;
+         filterButton.classList.remove('show');
+         filterButton.innerHTML = e.target.innerText;
+      })
+   })
 })();
