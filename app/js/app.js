@@ -29,9 +29,18 @@
          let shownItems = dropdownButtons.filter((item) => item.classList.contains('show'));
          const targetItem = e.target.getAttribute('id');
          const dropdownMenu = item.nextElementSibling;
-         dropdownMenu.style.width = item.offsetWidth+'px';
+         dropdownMenu.style.width = item.getBoundingClientRect().width+'px';
          document.getElementById(targetItem).classList.toggle('show');
          shownItems.length > 0 ? shownItems[0].classList.remove('show') : null;
+         document.addEventListener('click', e => {
+            let target = e.target;
+            let its_dropdown = item.contains(target);
+            let dropdownIsActive = item.classList.contains('show');
+
+            if (!its_dropdown  && dropdownIsActive) {
+               document.getElementById(targetItem).classList.toggle('show');
+            }
+         })
       });
    });
 
@@ -39,6 +48,12 @@
    sortingButton.addEventListener('click', ()=>{
       document.querySelector('.sort-options').classList.toggle('show');
    });
+
+   document.addEventListener('click', e => {
+      if (!sortingButton.contains(e.target) && document.querySelector('.sort-options').classList.contains('show')){
+         document.querySelector('.sort-options').classList.toggle('show');
+      }
+   })
 
    const sortingOptions = Array.from(document.querySelectorAll('.sort-options li'));
    let chosenOption = sortingOptions.filter(item=>item.classList.contains('chosen'));
