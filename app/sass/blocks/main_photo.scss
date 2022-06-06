@@ -26,6 +26,8 @@
       .nav-item {
         a {
           color: $color-primary-200;
+          font-size: 15px;
+          font-weight: 500;
         }
 
         &.nav-item__social {
@@ -45,6 +47,7 @@
     .main-photo__text{
       margin-top: 2em;
       margin-bottom: 4em;
+      font-size: 15px;
     }
   }
 

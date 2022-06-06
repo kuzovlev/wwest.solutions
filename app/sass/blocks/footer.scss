@@ -4,6 +4,8 @@ footer{
   .nav-item {
     a {
       color: $color-primary-200;
+      font-size: 15px;
+      font-weight: 600;
       &:hover {
         color: $color-primary-300
       }
