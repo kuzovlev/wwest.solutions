@@ -71,6 +71,28 @@
             target.classList.remove('shown-item');
          }
       }
-   })
+   });
 
+   const manufacturer = new Set(Array.from(document.querySelectorAll('.card-body h6')).map(item=>{
+      return item.textContent.slice(4).match(/(\w+)/)[0];
+   }));
+
+   function getElementsToFilter (element = "") {
+      return new Set(Array.from(document.querySelectorAll('.card-body h6 .' + element)).map(item => {
+         return item.innerText;
+      }));
+   }
+   const years = getElementsToFilter('year');
+   const models = getElementsToFilter('model');
+
+   const fillDropdowns = (element, content) => {
+      const dropdown = document.querySelector('.dropdown.'+element).querySelector('.dropdown-menu');
+      content.forEach(item=>{
+         dropdown.insertAdjacentHTML('afterbegin', `<li><a class="dropdown-item" href="#">${item}</a></li>`)
+      });
+   };
+
+   fillDropdowns('make', manufacturer);
+   fillDropdowns('year', years);
+   fillDropdowns('model', models);
 })();
